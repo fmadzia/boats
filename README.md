@@ -5,6 +5,7 @@
 - [Informacje ogólne](#informacje-ogólne)
 - [Założenia aplikacji](#założenia-aplikacji)
 - [Technologie](#technologie)
+- [Przypadki użycia](#przypadki-użycia")
 - [Instalacja](#instalacja)
 
 ## Informacje ogólne
@@ -31,6 +32,38 @@ Na dole znajdują się dwa przyciski służące do obracania łódki. Prędkoś�
 
 1. MAUI (C#)
 2. Wzorzec projektowy MVVM
+
+## Przypadki użycia
+
+### 1. Sterowanie łódką:
+
+#### Opis: Użytkownik steruje łódką przy użyciu dwóch przycisków na ekranie, co umożliwia obracanie łódki w lewo i w prawo.
+
+#### Przebieg:
+- Użytkownik uruchamia grę.
+- Użytkownik widzi łódkę na wodzie z góry.
+- Użytkownik naciska przycisk obracania w lewo lub w prawo.
+- Łódka obraca się w odpowiednim kierunku.
+
+### 2. Wpływ kierunku wiatru na prędkość łódki:
+
+#### Opis: Prędkość, z jaką porusza się łódka, zależy od kierunku wiatru wskazywanego przez kompas.
+
+#### Przebieg:
+
+- Użytkownik uruchamia grę.
+- Użytkownik widzi łódkę na wodzie z góry oraz igłę kompasu wskazującą kierunek wiatru.
+- Użytkownik steruje łódką, obserwując zmiany w prędkości łódki w zależności od kierunku wiatru.
+
+### 3. Obserwacja żagli:
+
+#### Opis: Żagle na łódce obracają się zgodnie z kierunkiem wiatru i obrotem łódki, symulując rzeczywiste warunki żeglarskie.
+
+#### Przebieg:
+
+- Użytkownik uruchamia grę.
+- Użytkownik widzi łódkę na wodzie z góry oraz igłę kompasu wskazującą kierunek wiatru.
+- Użytkownik steruje łódką, obserwując jak żagle zmieniają swoje położenie zgodnie z kierunkiem wiatru i obrotem łódki.
 
 ## Instalacja
 
