@@ -1,34 +1,44 @@
-# Łodka
+# Łódki
 
-## Opis aplikacji
-Aplikacja mobilna napisana w jezyku C# z wykorzystaniem technologii MAUI, w której użytkownik steruje łódką. Widok z góry na łódkę znajdującą się na wodzie. Użytkownik steruje rotacją łódki za pomocą 2 przycisków.
+## Spis treści
 
-## Funkcje
-- **Sterowanie Łódką**: Użytkownik może sterować rotacją łódki za pomocą 2 przycisków.
-- **Zmieniający się kierunek wiatru**: Co jakiś czas zmienia się kierunek, z którego wieje wiatr.
+- [Informacje ogólne](#informacje-ogólne)
+- [Założenia aplikacji](#założenia-aplikacji)
+- [Technologie](#technologie)
+- [Instalacja](#instalacja)
 
-## Wygląd
-- **Widok z Góry**: Po wejściu do aplikacji użytkownik widzi widok z góry na łódkę znajdującą się na wodzie.
-- **Igła kompasu wskazująca kierunek wiatru**
+## Informacje ogólne
 
-## Sterowanie
-- **Przyciski Sterowania**:
-  - **Przycisk 1**: Rotacja łódki w lewo
-  - **Przycisk 2**: Rotacja łódki w prawo
+Gra mobilna, w której gracz steruje łódką pływającą na wodzie. Sterowanie odbywa się za pomocą dwóch przycisków służących do obracania łódki. Prędkość poruszania się łódki jest uzależniona od kierunku wiatru. Celu gry na ten moment nie ma - służy bardziej jako symulacja wpływu kierunku wiatru na prędkość poruszania się łódki
 
-## Działanie Żagli
-- Żagle automatycznie ustawiają się w odpowiedniej pozycji, aby odzwierciedlić rzeczywiste ułożenie żagli potrzebne do osiągnięcia zamierzonego kierunku.
+<img src="https://thumbs.dreamstime.com/b/boat-top-view-isolated-vector-illustration-90963291.jpg" width="256px" />
 
-## Technologia
-- **Framework**: MAUI
-- **Język Programowania**: C#
+## Założenia aplikacji
 
-## Pliki Graficzne
-- **Obraz Łódki**
-- **Obraz Żagli**
-- **Obraz igły kompasu wskazującej kierunek wiatru**
+Po wejściu do gry widać łódkę na wodzie z góry. W prawym górnym rogu znajduje się igła kompasu wskazująca kierunek wiatru wraz z dokładną wartością w stopniach.
 
-## Instalacja i Uruchomienie
-1. Sklonuj repozytorium aplikacji.
-2. Otwórz projekt w Visual Studio.
-3. Zbuduj projekt i uruchom aplikację na urządzeniu mobilnym lub emulatorze.
+<img src="https://cdn2.iconfinder.com/data/icons/pix-glyph-set/50/520554-compass_2-512.png" width="256px" />
+
+Na dole znajdują się dwa przyciski służące do obracania łódki. Prędkość, z jaką poruszać się będzie łódka jest uzależniona od kierunku wiatru.
+
+Łódka posiada dwa żagle, które obracają się zgodnie z kierunkiem wiatru i obrotem łódki. Mają na celu jak najwierniejsze odzwierciedlenie rzeczywistego położenia żagli na łódce.
+
+<img src="https://oceansaillust.com/wp-content/uploads/2023/05/point-of-sails1-1.png" width="256px" />
+
+## Technologie
+
+<img src="https://th.bing.com/th/id/OIP.0cez_V3oCGdjzSU6SOjrPAAAAA?rs=1&pid=ImgDetMain" width="128px" />
+
+1. MAUI (C#)
+2. Wzorzec projektowy MVVM
+
+## Instalacja
+
+1. Sklonuj repozytorium
+
+```bash
+git clone https://github.com/fmadzia/boats.git
+```
+   
+2. Otwórz w wybranym IDE (np. Visual Studio lub Rider)
+3. Zbuilduj aplikację i uruchom na emulatorze lub urządzeniu mobilnym
